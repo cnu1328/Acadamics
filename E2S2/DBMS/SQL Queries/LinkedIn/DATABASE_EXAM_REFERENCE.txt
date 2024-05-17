@@ -1,0 +1,19 @@
+
+
+Types of Attributes : 
+
+link : https://www.scaler.com/topics/types-of-attributes-in-dbms/
+
+Cardinality in DataBase : 
+
+link : https://www.scaler.com/topics/cardinality-in-dbms/
+
+
+Participation Constraints :
+
+link : https://www.nielit.gov.in/gorakhpur/sites/default/files/Gorakhpur/Alevel_1_DBMS_09Apr2020_AV.pdf
+
+
+integrity Contraints : 
+
+link : https://www.javatpoint.com/dbms-integrity-constraints

@@ -1,0 +1,168 @@
+RC coupling :
+
+@ RC Coupled amplifier : Individual stages of the amplifier are connected together using a resistor-capactior.
+(resistance connected to the collector terminal and capacitor connected in between the amplifiers.
+ Abbrevation of RC coupling is resistance-capacitive coupling, 
+  is a coupling technique used in amplifiers.
+
+
+@ RC coupling is popular because it is cheap and provides a constant amplification(gain) overa wide range of frequencies.
+
+@ voltage divider or potential divider biasing used in RC coupled amplifier.
+
+@ RC coupling are most suitable for audio applications.
+
+@ The output of the amplifer is inverted if there is odd number of stage like 1,3 or 5.
+
+
+OP AMP - Appliations - Adder,subtractor and comparator circuits.
+
+@ An operational amplifier is an inegrated circuit that can amplify weak electric signlas.
+  > it has two input pins and one output pin.
+  > its role is to amplify and output the voltage difference between the input pins.
+	
+  > it eliminates the noise from an input signal
+ >Differential amplifier : amplifies the diference between the input signals.
+
+Inverting OP Am
+
+> inverting amplifier has an inverted output which is 180 degrees out of phase with respect to the input. The output voltage changes in the opposite direction to the input voltage.
+
+
+
+NOn-Inverting Op am:
+
+> it has an in-phase output
+
+
+Input offset voltage of an Opamp:
+
+> The input offset voltage is defined as the voltage that must be applied between the two input terminals to balance the Op-amp or to obtain a null or zero volts at the output.
+
+
+Output offset voltage:
+
+>  The output offset voltage is the DC voltage present at the output of the op-amp when the two input terminals are grounded or shorted.s
+ 
+
+>>> output voltage  v(out) = Rf/R1(v1+v2);
+
+
+Adder : an op-amp based adder produces an output equal to the addition of the
+input voltages applied at its inverting and non-inverting terminals.
+
+Subtractor : an op-amp based subtractor produces an output equal to the difference of the input voltages apllied at its inverting and non-inverting terminals.
+
+
+Comparator : The open-loop op-amp comparator is an analogue circuit that operates in its non-linear region as changes in the two analogue inputs, V+ and V- causes it to behave like a digital bistable device as triggering causes it to have two possible output states, +Vcc or -Vcc.
+
+Ideal Characteristics of op Amp : 
+bandwidth : infinite
+input offset is zero.
+
+
+Why rectifiers used with a filter at thier output (To remove all the AC components)
+
+Rectifiers : it is an electrical device that converts ac to into dc by using one or more p-n junction diodes.
+
+
+Voltage regulation : The variaton of D.C output voltage with change in D.C load current.
+
+ideal value of regulation  : Zero
+
+NO load condition : secondary side winding is open circuited
+
+Advantage of bridge rectifier  : the efficiency of the bridge rectifier is higher than the effiiciency of half-wave rectifier.
+
+Capacitor filter advantages : Cheaper, smaller in size,readily available.
+
+disadvantages : sensitive to temperature change,capacitance reduces with time.
+
+application of rectifers : 
+
+@ used with transformers
+@ modulation 
+@ voltage multiplier.
+
+Half-wave Rectifier : ocnverts ac to dc voltage, it uses only one diode for transformnation
+
+Full-wave rectifier : It converts the complete cycle of ac into pulstaing dc.
+
+
+CE CONFIGURATIONS  
+
+CE configuration : the emitter is connected between the collector and base.
+
+gain in CE = the ratio of change in collector current to the base current;
+
+phase relation between input and output  : 180 degrees.
+
+The power gain of a common emitter amplifier of voltage gain 50 and input impedance 100 ohm is 1250.
+
+CE applications : voltage amplification, at low frequencies
+
+@ it is also used in radio frequency transceiver cricuits.
+
+@ used in low-noise amplifiers.
+
+
+Viva Questions:
+
+1. Mention some of the linear applications of op–amps?
+
+Ans: Adder, subtractor, voltage –to- current converter, current –to- voltage converters, instrumentation amplifier, filter etc.
+
+
+2. Mention some of the non – linear applications of op-amps?
+
+
+Ans: Rectifier, peak detector, clipper, clamper, sample and hold circuit, log amplifier, anti –log amplifier, multiplier etc.
+
+3. What happens when the common terminal of V+ and V- sources is not grounded?
+
+Ans: If the common point of the two supplies is not grounded, twice the supply voltage will get applied and it may damage the op-amp.
+
+4. What are the ideal characteristics of an op-amp?
+
+Ans: Ideal characteristics of an op-amp are
+
+Open loop gain  infinite
+Input impedance : infinite
+Output impedance : zero
+Bandwidth : infinite
+
+
+5. What is a comparator?
+
+Ans: A comparator is a circuit which compares a signal voltage applied at one input of an op-amp with a known reference voltage at the other input.  It is an open loop op-amp with output + /- Vsat.
+
+6. Why IC 741 is not used for high frequency applications?
+
+Ans: IC741 has limited bandwidth because of the predominance of capacitance present in the circuit. As frequency increases, the output gets reduced.
+
+7. In the comparator circuit, if the reference voltage is zero, what is the duty cycle of the Vo. How the duty cycle is effected by varying the reference voltage (in the positive direction and –ve direction).
+
+Ans: 50%, Duty cycle decreases if the reference voltage is increased and it is increased when reference voltage is reduced.
+
+8. A comparator converts sinusoidal wave to __ wave.
+
+Ans: Square wave.
+
+9. What is duty cycle?
+
+Ans: It is the ratio of the time period of the positive cycle to that of the time period of the entire cycle in percentage.
+
+10. What is slew rate? What are its units?
+
+Ans: It is the rate of change of the output voltage when a step input voltage is given. It is measured as V/Sec.
+
+
+
+
+
+
+
+
+
+
+

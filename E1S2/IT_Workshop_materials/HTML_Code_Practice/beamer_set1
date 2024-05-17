@@ -1,0 +1,9 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usetheme{default}
+\title{How to Get Rid of Ghost}
+
+\begin{document}
+\maketitle
+\end{document}
