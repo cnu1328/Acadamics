@@ -1,5 +1,0 @@
-VS Code Extentions:
-
-1. AutoClose TAG: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
-2. AutoRemane Tag: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
-3. MarkDown All in One: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
