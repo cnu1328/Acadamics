@@ -1,0 +1,88 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+bool isPresent(vector<int> frames, int sr, int index, unordered_map<int, int> &mp) {
+    for(int i=0; i < frames.size(); i++) {
+        if(frames[i] == sr) {
+            mp[frames[i]] = index;
+            return true;
+        }
+
+    }
+
+    return false;
+}
+
+
+void print(vector<int> frames, int frame) {
+    string str = " [ ";
+
+    for(int i=0; i<frame; i++) {
+
+        if(frames[i] != -1)
+            str += to_string(frames[i]) + " ";
+    }
+
+    str += " ] ";
+    cout<<str;
+}
+
+int main() {
+    cout<<"Enter number of pages  and Frames: ";
+    int n = 20, frame = 3;
+//    cin>>n>>frame;
+
+    vector<int> pages = {7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1};
+
+//    for(int i=0; i<n; i++) {
+//        int a;
+//        cin>>a;
+//        pages.push_back(a);
+//    }
+
+    vector<int> frames(frame, -1);
+    int count = 0;
+
+    unordered_map<int, int> mp;
+
+
+
+    for(int i=0; i<n; i++) {
+        if(count < frame) {
+            frames[count] = pages[count];
+            mp[pages[count]] = i;
+            count++;
+            print(frames, frame);
+        }
+
+        else {
+            if(isPresent(frames, pages[i],i, mp)) {
+                cout<<" [ Hit ] ";
+            }
+
+            else {
+                int lru = INT_MAX, val;
+
+                for(auto &it : mp) {
+                    if(it.second < lru) {
+                        lru = it.second;
+                        val = it.first;
+                    }
+                }
+
+                mp.erase(val);
+
+                auto index = find(frames.begin(), frames.end(), val);
+
+                frames[index - frames.begin()] = pages[i];
+                mp[pages[i]] = i;
+
+                print(frames, frame);
+            }
+        }
+    }
+    cout<<endl;
+
+
+}
