@@ -1,0 +1,12 @@
+button {
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid navy;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: aqua;
+    color: #fff;
+}
